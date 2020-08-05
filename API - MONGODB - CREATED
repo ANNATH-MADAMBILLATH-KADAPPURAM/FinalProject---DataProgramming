@@ -1,0 +1,30 @@
+NEW CREATED API
+
+MAIN FUNCTION CODE
+exports = function(payload) {
+ const mongodb = context.services.get("mongodb-atlas");
+ const mycollection = mongodb.db("Cluster0").collection("DevicesUsed");
+ return mycollection.find({}).toArray();
+ };
+
+#FOR DEVICES USED
+https://webhooks.mongodb-stitch.com/api/client/v2.0/app/api-yoknh/service/api/incoming_webhook/DevicesUsed
+
+#FOR LOGIN TODAY
+https://webhooks.mongodb-stitch.com/api/client/v2.0/app/api-yoknh/service/api/incoming_webhook/LoginToday
+
+#FOR OS USED
+https://webhooks.mongodb-stitch.com/api/client/v2.0/app/api-yoknh/service/api/incoming_webhook/OsUsed
+
+#RealtimeLogin
+https://webhooks.mongodb-stitch.com/api/client/v2.0/app/api-yoknh/service/api/incoming_webhook/RealtimeLogin
+
+#TopDomainsinOneMonth
+https://webhooks.mongodb-stitch.com/api/client/v2.0/app/api-yoknh/service/api/incoming_webhook/TopDomainsinOneMonth
+
+#TopDomainsinSevenDays
+https://webhooks.mongodb-stitch.com/api/client/v2.0/app/api-yoknh/service/api/incoming_webhook/TopDomainsinSevenDays
+
+#TopPages
+https://webhooks.mongodb-stitch.com/api/client/v2.0/app/api-yoknh/service/api/incoming_webhook/TopPages
+
